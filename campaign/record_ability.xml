@@ -6,23 +6,21 @@
 			<minimum width="350" />
 		</sizelimits>
 		<sheetdata>
-			<subwindow_power_action_record name="actions" />
-
-			<scrollbar_record>
-				<target>actions</target>
-			</scrollbar_record>
-
+			<frame_record_content_tabbed name="contentframe" insertbefore="content" />
+			<subwindow_power_action_record name="actions"/>
+				<scrollbar_record>
+					<target>actions</target>
+				</scrollbar_record>
 			<tabs_recordsheet name="tabs">
 				<tab>
 					<icon>tab_main</icon>
-					<subwindow>text</subwindow>
+					<subwindow>content</subwindow>
 				</tab>
 				<tab>
 					<icon>tab_actions</icon>
 					<subwindow>actions</subwindow>
 				</tab>
 			</tabs_recordsheet>
-
 		</sheetdata>
 	</windowclass>
 

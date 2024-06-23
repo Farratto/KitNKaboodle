@@ -51,11 +51,11 @@
 					end
 				</script>
 				<tab>
-					<icon>tab_main</icon>
+					<tabres>tab_main</tabres>
 					<subwindow>content</subwindow>
 				</tab>
 				<tab>
-					<icon>tab_actions</icon>
+					<tabres>tab_actions</tabres>
 					<subwindow>actions</subwindow>
 				</tab>
 			</tabs_recordsheet>

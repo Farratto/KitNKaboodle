@@ -6,6 +6,8 @@
 			<minimum width="350" />
 		</sizelimits>
 		<sheetdata>
+			<frame_record_content name="contentframe" merge="delete" />
+			<frame_record_content_tabbed name="contentframe" insertbefore="content" />
 			<subwindow_record name="actions">
 				<class>power_actions</class>
 			</subwindow_record>
@@ -16,11 +18,11 @@
 
 			<tabs_recordsheet name="tabs">
 				<tab>
-					<icon>tab_main</icon>
+					<tabres>tab_main</tabres>
 					<subwindow>content</subwindow>
 				</tab>
 				<tab>
-					<icon>tab_actions</icon>
+					<tabres>tab_actions</tabres>
 					<subwindow>actions</subwindow>
 				</tab>
 			</tabs_recordsheet>
@@ -46,7 +48,7 @@
 				<min>0</min>
 			</basicnumber>
 			<cycler_power_useperiod name="usesperiod">
-				<anchored to="useslabel" width="60" height="20"> 
+				<anchored to="useslabel" width="60" height="20">
 					<top />
 					<left anchor="right" relation="relative" offset="10" />
 				</anchored>
@@ -79,7 +81,7 @@
 			</list_poweraction>
 		</sheetdata>
 	</windowclass>
-	
+
 	<windowclass name="power_action" merge="join">
 		<script file="campaign/scripts/power_action.lua" />
 	</windowclass>
