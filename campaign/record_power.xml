@@ -6,6 +6,12 @@
 			<minimum width="350" />
 		</sizelimits>
 		<sheetdata>
+			<!--****************************************************************************
+			Amended by D.Eiszele 23/06/24
+			****************************************************************************-->
+			<frame_record_content name="contentframe" merge="delete" />
+			<frame_record_content_tabbed name="contentframe" insertbefore="content" />
+			<!--****************************************************************************-->
 			<subwindow_record name="actions">
 				<class>power_actions</class>
 			</subwindow_record>

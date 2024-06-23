@@ -24,6 +24,11 @@ function onInit()
 		"inventorylist",
 		"cohorts.*.inventorylist",
 	});
+	-- Added D.Eiszele 23/06/24
+	local tData = {
+		tCurrencyPaths = ItemManager.getDefaultCurrencyPaths()
+				  };
+	ItemManager.setActorTypeInfo("npc", tData);
 end
 
 function nodeBelongsToItem(nodePower)
