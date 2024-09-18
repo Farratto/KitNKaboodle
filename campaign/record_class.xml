@@ -1,17 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-	<windowclass name="reference_classfeature" merge="join">
+	<!-- <windowclass name="reference_classfeature" merge="join"> Commented out by Farratto -->
+	<windowclass name="reference_classfeature" merge="join" copy="record_window_tabbed"> <!-- added by Farratto -->
 		<script file="campaign/scripts/insetcontentframe.lua" />
 		<sizelimits>
 			<minimum width="350" />
 		</sizelimits>
+		<!-- Tab section added by Farratto -->
+		<tab>
+			<name>notes</name>
+			<resource>tab_main</resource>
+			<class>record_content_text</class>
+			<embed />
+		</tab>
+		<tab merge="add">
+			<name>actions</name>
+			<icon>tab_actions</icon>
+			<subwindow>actions</subwindow>
+			<resource>tab_actions</resource>
+			<embed />
+		</tab>
 		<sheetdata>
+			<frame_record_content name="contentframe" merge="delete" /> <!-- added by Farratto -->
 			<subwindow_power_action_record name="actions" />
 
 			<scrollbar_record>
 				<target>actions</target>
 			</scrollbar_record>
 
+            <!-- section commented out by Farratto
 			<tabs_recordsheet name="tabs">
 				<tab>
 					<icon>tab_main</icon>
@@ -22,7 +39,7 @@
 					<subwindow>actions</subwindow>
 				</tab>
 			</tabs_recordsheet>
-
+            -->
 		</sheetdata>
 	</windowclass>
 </root>
