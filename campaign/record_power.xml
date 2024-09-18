@@ -5,9 +5,19 @@
 		<sizelimits>
 			<minimum width="350" />
 		</sizelimits>
+		<tab merge="add">
+			<name>actions</name>
+			<icon>tab_actions</icon>
+			<subwindow>actions</subwindow>
+			<resource>tab_actions</resource>
+			<embed />
+		</tab>
 		<sheetdata>
+			<!--****************************************************************************
+			Amended by D.Eiszele 23/06/24
+			****************************************************************************-->
 			<frame_record_content name="contentframe" merge="delete" />
-			<frame_record_content_tabbed name="contentframe" insertbefore="content" />
+			<!--****************************************************************************-->
 			<subwindow_record name="actions">
 				<class>power_actions</class>
 			</subwindow_record>
@@ -15,18 +25,6 @@
 			<scrollbar_record>
 				<target>actions</target>
 			</scrollbar_record>
-
-			<tabs_recordsheet name="tabs">
-				<tab>
-					<tabres>tab_main</tabres>
-					<subwindow>content</subwindow>
-				</tab>
-				<tab>
-					<tabres>tab_actions</tabres>
-					<subwindow>actions</subwindow>
-				</tab>
-			</tabs_recordsheet>
-
 		</sheetdata>
 	</windowclass>
 
@@ -140,6 +138,9 @@
 		</script>
 	</windowclass>
 
+    <!-- This is windowclass is throwing a warning that "power_action_resource" doesn't exit -->
+	<!-- I'm not sure if this is used as an interaction with another extension so I'm leaving it alone -->
+	<!-- Farratto -->
 	<windowclass name="power_action_resource" merge="join">
 		<script>
 			function update(_, bHideCast)
