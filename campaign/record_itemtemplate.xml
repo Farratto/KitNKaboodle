@@ -4,7 +4,6 @@
 		<sizelimits>
 			<minimum width="350" />
 		</sizelimits>
-		<!-- Tab section added by Farratto -->
 		<tab>
 			<name>notes</name>
 			<resource>tab_main</resource>

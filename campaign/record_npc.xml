@@ -6,8 +6,6 @@
 		</sizelimits>
 		<minimize>minimized_npc</minimize>
 		<gmexport>npc</gmexport>
-		<!--*****************************************************************************-->
-		<!--Amended by D.Eiszele 23/06/24-->
 		<tab>
 			<name>main</name>
 			<resource>tab_main</resource>

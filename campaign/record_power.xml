@@ -13,11 +13,7 @@
 			<embed />
 		</tab>
 		<sheetdata>
-			<!--****************************************************************************
-			Amended by D.Eiszele 23/06/24
-			****************************************************************************-->
 			<frame_record_content name="contentframe" merge="delete" />
-			<!--****************************************************************************-->
 			<subwindow_record name="actions">
 				<class>power_actions</class>
 			</subwindow_record>
@@ -140,7 +136,6 @@
 
     <!-- This is windowclass is throwing a warning that "power_action_resource" doesn't exit -->
 	<!-- I'm not sure if this is used as an interaction with another extension so I'm leaving it alone -->
-	<!-- Farratto -->
 	<windowclass name="power_action_resource" merge="join">
 		<script>
 			function update(_, bHideCast)
