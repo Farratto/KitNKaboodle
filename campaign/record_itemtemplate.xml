@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-	<!-- <windowclass name="itemtemplate" merge="join"> Commented out by Farratto -->
-	<windowclass name="itemtemplate" merge="join" copy="record_window_tabbed"> <!-- added by Farratto -->
+	<windowclass name="itemtemplate" merge="join" copy="record_window_tabbed">
 		<sizelimits>
 			<minimum width="350" />
 		</sizelimits>
@@ -21,7 +20,6 @@
 		</tab>
 		<sheetdata>
 			<frame_record_content name="contentframe" merge="delete" />
-			<!-- <frame_record_content_tabbed name="contentframe" insertbefore="main" /> Commented out by Farratto -->
 
 			<subwindow_record name="actions">
 				<class>item_actions</class>
@@ -30,19 +28,6 @@
 			<scrollbar_record>
 				<target>actions</target>
 			</scrollbar_record>
-
-            <!-- section commented out by Farratto
-			<tabs_recordsheet name="tabs">
-				<tab>
-					<icon>tab_main</icon>
-					<subwindow>main</subwindow>
-				</tab>
-				<tab>
-					<icon>tab_actions</icon>
-					<subwindow>actions</subwindow>
-				</tab>
-			</tabs_recordsheet>
-			-->
 		</sheetdata>
 	</windowclass>
 </root>

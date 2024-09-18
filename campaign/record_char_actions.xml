@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- quick fix employed by Farratto.  Hopefully does not affect functionality -->
-
 <root>
 	<windowclass name="charsheet_actions_contents" merge="join">
 		<sheetdata>

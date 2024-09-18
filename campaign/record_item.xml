@@ -4,7 +4,6 @@
 		<sizelimits>
 			<minimum width="350" />
 		</sizelimits>
-		<!-- Tab section added by Farratto -->
 		<tab merge="add">
 			<name>actions</name>
 			<script>
@@ -43,7 +42,6 @@
 		</tab>
 		<sheetdata>
 			<frame_record_content name="contentframe" merge="delete" />
-			<!-- <frame_record_content_tabbed name="contentframe" insertbefore="content" /> Commented out by Farratto -->
 
 			<subwindow_record name="actions">
 				<class>item_actions</class>
@@ -56,48 +54,6 @@
 			<scrollbar_record>
 				<target>actions</target>
 			</scrollbar_record>
-
-            <!-- section commented out by Farratto
-			<tabs_recordsheet name="tabs">
-				<script>
-					function onInit()
-						if super and super.onInit then
-							super.onInit();
-						end
-						local nodeRecord = window.getDatabaseNode();
-						local isIdentifiedPath = nodeRecord.getPath("isidentified");
-						DB.addHandler(isIdentifiedPath, "onUpdate", onIdentifiedChanged);
-						update(DB.getValue(isIdentifiedPath) ~= 0);
-					end
-					function onClose()
-						local nodeRecord = window.getDatabaseNode();
-						DB.removeHandler(nodeRecord.getPath("isidentified"), "onUpdate", onIdentifiedChanged);
-						if super and super.onClose then
-							super.onClose();
-						end
-					end
-					function onIdentifiedChanged(nodeIdentified)
-						local bIdentified = nodeIdentified.getValue() ~= 0;
-						update(bIdentified);
-					end
-					function update(bIdentified)
-						if bIdentified or Session.IsHost then
-							setTab(2, "actions", "tab_actions");
-						else
-							setTab(2, "empty_actions", "tab_actions");
-						end
-					end
-				</script>
-				<tab>
-					<tabres>tab_main</tabres>
-					<subwindow>content</subwindow>
-				</tab>
-				<tab>
-					<tabres>tab_actions</tabres>
-					<subwindow>actions</subwindow>
-				</tab>
-			</tabs_recordsheet>
-    		-->
 		</sheetdata>
 	</windowclass>
 
