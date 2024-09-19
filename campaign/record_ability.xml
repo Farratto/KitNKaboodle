@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
+    <!-- To restore tabs later, Uncomment this.
 	<windowclass name="ref_ability" merge="join" copy="record_window_tabbed">
 		<script file="campaign/scripts/insetcontentframe.lua" />
 		<sizelimits>
@@ -160,4 +161,5 @@
 			</simplestring>
 		</sheetdata>
 	</windowclass>
+	-->
 </root>
