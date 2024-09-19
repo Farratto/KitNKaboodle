@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
+    <!-- To restore tabs later, Uncomment this.
 	<windowclass name="reference_classfeature" merge="join" copy="record_window_tabbed">
 		<script file="campaign/scripts/insetcontentframe.lua" />
 		<sizelimits>
@@ -27,4 +28,5 @@
 			</scrollbar_record>
 		</sheetdata>
 	</windowclass>
+	-->
 </root>
