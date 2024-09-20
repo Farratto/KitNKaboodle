@@ -1,27 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-	<windowclass name="npc" merge="join" copy="record_window_tabbed">
-		<sizelimits>
-			<minimum width="500" height="500" />
-		</sizelimits>
-		<minimize>minimized_npc</minimize>
+	<windowclass name="npc" merge="join">
 		<gmexport>npc</gmexport>
-		<tab>
-			<name>main</name>
-			<resource>tab_main</resource>
-			<class>npc_combat</class>
-			<embed />
-		</tab>
 		<tab merge="add">
 			<name>tab_inventory</name>
 			<resource>tab_inventory</resource>
 			<class>npc_inventory</class>
-			<embed />
-		</tab>
-		<tab merge="add">
-			<name>notes</name>
-			<resource>tab_notes</resource>
-			<class>record_content_text</class>
 			<embed />
 		</tab>
 		<script>
@@ -34,6 +18,7 @@
 			end
 		</script>
 	</windowclass>
+	
 	<windowclass name="npc_inventory">
 		<margins>0,3,0,0</margins>
 		<script file="campaign/scripts/npc_inventory.lua" />
