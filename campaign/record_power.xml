@@ -1,27 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
 	<windowclass name="power" merge="join">
-		<script file="campaign/scripts/insetcontentframe.lua" />
-		<sizelimits>
-			<minimum width="350" />
-		</sizelimits>
 		<tab merge="add">
 			<name>actions</name>
 			<icon>tab_actions</icon>
 			<subwindow>actions</subwindow>
 			<resource>tab_actions</resource>
+			<class>power_actions</class>
 			<embed />
 		</tab>
-		<sheetdata>
-			<frame_record_content name="contentframe" merge="delete" />
-			<subwindow_record name="actions">
-				<class>power_actions</class>
-			</subwindow_record>
-
-			<scrollbar_record>
-				<target>actions</target>
-			</scrollbar_record>
-		</sheetdata>
 	</windowclass>
 
 	<windowclass name="power_actions">
@@ -134,7 +121,7 @@
 		</script>
 	</windowclass>
 
-    <!-- This is windowclass is throwing a warning that "power_action_resource" doesn't exit -->
+    <!-- This windowclass is throwing a warning that "power_action_resource" doesn't exit -->
 	<!-- I'm not sure if this is used as an interaction with another extension so I'm leaving it alone -->
 	<windowclass name="power_action_resource" merge="join">
 		<script>
