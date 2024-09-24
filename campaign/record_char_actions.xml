@@ -121,7 +121,7 @@
 		<playercontrol />
 		<script file="campaign/scripts/itemgroup.lua" />
 		<sheetdata>
-			<windowtitlebar_char name="title" />
+			<windowtitlebar_charselect name="title" />
 			<anchor_title_charsheethelper name="contentanchor" />
 			<windowlist name="list">
 				<anchored to="contentanchor">
