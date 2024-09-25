@@ -34,10 +34,23 @@
 					<left anchor="right" relation="relative" offset="10" />
 				</anchored>
 			</cycler_power_useperiod>
+			<label name="grouplabel">
+				<anchored width="40">
+				    <top parent="useslabel" anchor="bottom" offset="5" />
+					<left offset="10" />
+				</anchored>
+				<static textres="power_label_groupmember" />
+			</label>
+			<basicstring name="group">
+				<anchored to="grouplabel" width="250" height="20" >
+					<top />
+					<left anchor="right" relation="relative" offset="5" />
+				</anchored>
+			</basicstring>
 
 			<label_itemframetop name="actionstitle">
 				<anchored height="20">
-					<top parent="useslabel" anchor="bottom" offset="10" />
+					<top parent="grouplabel" anchor="bottom" offset="10" />
 					<left offset="15" />
 					<right offset="-10" />
 				</anchored>
@@ -121,8 +134,6 @@
 		</script>
 	</windowclass>
 
-    <!-- This windowclass is throwing a warning that "power_action_resource" doesn't exit -->
-	<!-- I'm not sure if this is used as an interaction with another extension so I'm leaving it alone -->
 	<windowclass name="power_action_resource" merge="join">
 		<script>
 			function update(_, bHideCast)
